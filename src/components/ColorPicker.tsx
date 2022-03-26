@@ -7,6 +7,7 @@ export function ColorPicker() {
   const [lightness, setLightness] = useState('50')
   const [alpha, setAlpha] = useState('50')
   const newBackgroundColor = `hsla(${hue},${saturation}%,${lightness}%,${alpha}`
+  const newStyle = { newBackgroundColor: newBackgroundColor }
 
   // FUNCTIONS
   function handleHueRange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -29,6 +30,9 @@ export function ColorPicker() {
   return (
     <div>
       <section>
+        <header>
+          <h1>Pick a color any color!</h1>
+        </header>
         <p>Hue</p>
         <input
           className="hue"
@@ -38,6 +42,7 @@ export function ColorPicker() {
           max="360"
           value="164"
         />
+        <label htmlFor="Hue">H {hue}</label>
         <p>Saturation</p>
         <input
           className="saturation"
@@ -47,6 +52,8 @@ export function ColorPicker() {
           max="100"
           value="50"
         />
+        <label htmlFor="Saturation">S {saturation}</label>
+
         <p>Lightness</p>
         <input
           className="lightness"
@@ -56,6 +63,8 @@ export function ColorPicker() {
           max="100"
           value="50"
         />
+        <label htmlFor="Lightness">L {lightness}</label>
+
         <p>Alpha</p>
         <input
           className="alpha"
@@ -65,6 +74,7 @@ export function ColorPicker() {
           max="100"
           value="50"
         />
+        <label htmlFor="Alpha">A {alpha}</label>
       </section>
     </div>
   )
