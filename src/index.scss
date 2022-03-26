@@ -1,17 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Permanent+Marker&display=swap');
 
 :root {
   font: 16px / 1 sans-serif;
-
-  // SDG brand colors
-  --asphalt: #2f3737;
-  --bright-sky: #80ced2;
-  --lime: #b1d133;
-  --night-sky: #85577e;
-  --sand: #f7f0da;
-  --sea: #5a9090;
-  --sun: #d5562b;
-  --tangerine: #f99d1b;
 }
 
 html {
@@ -22,10 +12,21 @@ body {
   margin: 0;
   min-height: 100%;
 }
-
-h1 {
-  font-size: 75px;
+header {
+  text-align: center;
   display: flex;
-  font-family: 'Palette Mosaic', cursive;
   justify-content: center;
+}
+
+header .color1 {
+  font-size: 75px;
+  font-family: 'Permanent Marker', cursive;
+}
+header .color2 {
+  font-size: 75px;
+  font-family: 'Permanent Marker', cursive;
+}
+header .color3 {
+  font-size: 75px;
+  font-family: 'Permanent Marker', cursive;
 }
