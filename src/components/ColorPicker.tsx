@@ -31,11 +31,12 @@ export function ColorPicker() {
     <div>
       <section>
         <header>
-          <h1>Pick a color any color!</h1>
+          <h1>Color Color Color</h1>
         </header>
         <p>Hue</p>
         <input
-          className="hue"
+          id="hue"
+          name="hue"
           type="range"
           onChange={handleHueRange}
           min="0"
@@ -45,7 +46,8 @@ export function ColorPicker() {
         <label htmlFor="Hue">H {hue}</label>
         <p>Saturation</p>
         <input
-          className="saturation"
+          id="saturation"
+          name="saturation"
           onChange={handleSaturationRange}
           type="range"
           min="0"
@@ -56,7 +58,8 @@ export function ColorPicker() {
 
         <p>Lightness</p>
         <input
-          className="lightness"
+          id="lightness"
+          name="lightness"
           onChange={handleLightnessRange}
           type="range"
           min="0"
@@ -67,7 +70,8 @@ export function ColorPicker() {
 
         <p>Alpha</p>
         <input
-          className="alpha"
+          id="alpha"
+          name="alpha"
           onChange={handleAlphaRange}
           type="range"
           min="0"
