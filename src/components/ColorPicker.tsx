@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 
 export function ColorPicker() {
   // HOOKS//       const .....
-  const [hue, setHue] = useState('60')
-  const [saturation, setSaturation] = useState('50')
-  const [lightness, setLightness] = useState('50')
-  const [alpha, setAlpha] = useState('50')
+  const [hue, setHue] = useState(Math.floor(Math.random() * 361))
+  const [saturation, setSaturation] = useState(Math.floor(Math.random() * 101))
+  const [lightness, setLightness] = useState(Math.floor(Math.random() * 101))
+  const [alpha, setAlpha] = useState(Math.floor(Math.random() * 101))
 
   const newColor = `hsla(${hue},${saturation}%,${lightness}%,${alpha}`
   const newStyle = { color: newColor }
@@ -13,30 +13,37 @@ export function ColorPicker() {
   // FUNCTIONS
   function handleHueRange(event: React.ChangeEvent<HTMLInputElement>) {
     event.preventDefault()
-    setHue(event.target.value)
+    setHue(Number(event.target.value))
   }
   function handleSaturationRange(event: React.ChangeEvent<HTMLInputElement>) {
     event.preventDefault()
-    setSaturation(event.target.value)
+    setSaturation(Number(event.target.value))
   }
   function handleLightnessRange(event: React.ChangeEvent<HTMLInputElement>) {
     event.preventDefault()
-    setLightness(event.target.value)
+    setLightness(Number(event.target.value))
   }
   function handleAlphaRange(event: React.ChangeEvent<HTMLInputElement>) {
     event.preventDefault()
-    setAlpha(event.target.value)
+    setAlpha(Number(event.target.value))
+  }
+
+  function HandleRandomColorButtonClick() {
+    setHue(Math.floor(Math.random() * 361))
+    setSaturation(Math.floor(Math.random() * 101))
+    setLightness(Math.floor(Math.random() * 101))
+    setAlpha(Math.floor(Math.random() * 101))
   }
 
   return (
-    <div>
-      <section>
-        <header style={newStyle}>
-          <div className="color1">Color</div>
-          <div className="color2">Color</div>
-          <div className="color3">Color</div>
-        </header>
+    <main>
+      <header style={newStyle}>
+        <div className="color1">Color</div>
+        <div className="color2">Color</div>
+        <div className="color3">Color</div>
+      </header>
 
+      <section>
         <p>Hue</p>
         <input
           id="hue"
@@ -47,7 +54,7 @@ export function ColorPicker() {
           max="360"
           value={hue}
         />
-        <label htmlFor="Hue">H {hue}</label>
+        <label htmlFor="Hue"> {hue}</label>
 
         <p>Saturation</p>
         <input
@@ -59,7 +66,7 @@ export function ColorPicker() {
           max="100"
           value={saturation}
         />
-        <label htmlFor="Saturation">S {saturation}</label>
+        <label htmlFor="Saturation"> {saturation}</label>
 
         <p>Lightness</p>
         <input
@@ -71,7 +78,7 @@ export function ColorPicker() {
           max="100"
           value={lightness}
         />
-        <label htmlFor="Lightness">L {lightness}</label>
+        <label htmlFor="Lightness"> {lightness}</label>
 
         <p>Alpha</p>
         <input
@@ -83,8 +90,12 @@ export function ColorPicker() {
           max="100"
           value={alpha}
         />
-        <label htmlFor="Alpha">A {alpha}</label>
+        <label htmlFor="Alpha">{alpha}</label>
       </section>
-    </div>
+      <br></br>
+      <div className="button">
+        <button onClick={HandleRandomColorButtonClick}>Randomizer</button>
+      </div>
+    </main>
   )
 }

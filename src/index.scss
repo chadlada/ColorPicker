@@ -30,3 +30,28 @@ header .color3 {
   font-size: 75px;
   font-family: 'Permanent Marker', cursive;
 }
+
+#hue {
+  // display: flex;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+}
+
+section {
+  text-align: center;
+}
+
+div .button {
+  display: flex;
+  justify-content: center;
+  padding: 15px 32px;
+  font-size: 12px;
+  // text-align: center;
+}
+
+button {
+  font-size: 15px;
+}
