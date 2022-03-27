@@ -96,6 +96,12 @@ export function ColorPicker() {
       <div className="button">
         <button onClick={HandleRandomColorButtonClick}>Randomizer</button>
       </div>
+      <p style={newStyle} className="directions">
+        Directions: Move the sliders above left and right and you will see the
+        colors change right before your very eyes! <br></br>
+        Click the 'randomizer' button to have a random color arrangement chosen
+        for you!
+      </p>
     </main>
   )
 }
