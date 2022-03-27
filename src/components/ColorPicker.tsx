@@ -99,7 +99,7 @@ export function ColorPicker() {
         Directions: Move the sliders above left and right and you will see the
         colors change right before your very eyes! <br></br>OR
         <br></br>
-        Click the 'randomizer' button to have a random color arrangement chosen
+        Click the randomizer button to have a random color arrangement chosen
         for you!
       </p>
       <p className="hslvalue">
