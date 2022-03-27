@@ -17,8 +17,10 @@
     "useTabs": false
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-fontawesome": "^1.7.1"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",

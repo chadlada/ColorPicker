@@ -43,6 +43,7 @@ export function ColorPicker() {
         <div className="color3">Color</div>
       </header>
       <section>
+        <i className="fa-solid fa-face-anguished"></i>
         <p>Hue</p>
         <input
           id="hue"
@@ -95,7 +96,7 @@ export function ColorPicker() {
       <div className="button">
         <button onClick={HandleRandomColorButtonClick}>Randomizer</button>
       </div>
-      <p style={newStyle} className="directions">
+      <p className="directions">
         Directions: Move the sliders above left and right and you will see the
         colors change right before your very eyes! <br></br>OR
         <br></br>
@@ -103,9 +104,15 @@ export function ColorPicker() {
         for you!
       </p>
       <p className="hslvalue">
-        {' '}
         hsl value: ({hue}, {saturation}%, {lightness}%){' '}
       </p>
+
+      <figure style={newStyle}>
+        <i className="first fas fa-sun fa-7x"></i>
+        <i className="second fas fa-sun fa-10x"></i>
+        <i className="third fas fa-sun fa-9x"></i>
+        {/* <i className="third fas fa-rain fa-9x"></i> */}
+      </figure>
     </main>
   )
 }

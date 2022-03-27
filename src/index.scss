@@ -63,9 +63,19 @@ button {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   background-color: black;
+  color: hsl(208, 59%, 69%);
 }
 
 .hslvalue {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
+}
+
+.fa-solid {
+  font-size: 20rem;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
 }
