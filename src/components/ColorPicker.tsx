@@ -42,7 +42,6 @@ export function ColorPicker() {
         <div className="color2">Color</div>
         <div className="color3">Color</div>
       </header>
-
       <section>
         <p>Hue</p>
         <input
@@ -98,9 +97,14 @@ export function ColorPicker() {
       </div>
       <p style={newStyle} className="directions">
         Directions: Move the sliders above left and right and you will see the
-        colors change right before your very eyes! <br></br>
+        colors change right before your very eyes! <br></br>OR
+        <br></br>
         Click the 'randomizer' button to have a random color arrangement chosen
         for you!
+      </p>
+      <p className="hslvalue">
+        {' '}
+        hsl value: ({hue}, {saturation}%, {lightness}%){' '}
       </p>
     </main>
   )
