@@ -38,12 +38,10 @@ export function ColorPicker() {
   return (
     <main>
       <header style={newStyle}>
-        <div className="color1">Color</div>
-        <div className="color2">Color</div>
-        <div className="color3">Color</div>
+        <div className="color1">ColorColorColor</div>
       </header>
+
       <section>
-        <i className="fa-solid fa-face-anguished"></i>
         <p>Hue</p>
         <input
           id="hue"
@@ -104,7 +102,7 @@ export function ColorPicker() {
         for you!
       </p>
       <p className="hslvalue">
-        hsl value: ({hue}, {saturation}%, {lightness}%){' '}
+        hsl value: ({hue}, {saturation}%, {lightness}%)
       </p>
 
       <figure style={newStyle}>

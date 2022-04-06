@@ -24,14 +24,6 @@ header .color1 {
   font-size: 75px;
   font-family: 'Permanent Marker', cursive;
 }
-header .color2 {
-  font-size: 75px;
-  font-family: 'Permanent Marker', cursive;
-}
-header .color3 {
-  font-size: 75px;
-  font-family: 'Permanent Marker', cursive;
-}
 
 #hue {
   // display: flex;
@@ -79,4 +71,22 @@ button {
 figure {
   display: flex;
   justify-content: center;
+}
+
+@media all and (max-width: 494px) {
+  header > .color1 {
+    font-size: 30px;
+  }
+  figure > .first {
+    font-size: 4rem;
+  }
+  figure > .second {
+    font-size: 4rem;
+  }
+  figure > .third {
+    font-size: 4rem;
+  }
+  .directions {
+    font-size: 15px;
+  }
 }
